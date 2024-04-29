@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-"""This define square class"""
+"""define class"""
 
 
 class Square:
-    """Class has no attribute and construct have none.
+    """ a square class
+    Attributes:
+    __size (int): size of a side of the square
+    """
+    def __init__(self, size):
+        """initalizes attributes
+        Args:
+            size (int): size of a side of the square
+            Returns: None
         """
-        def __init__(self, size):
-                """Constructor of square with one instance size.
-
-                Args:
-                        size: private instance size of the square.
-                """
-                self.__size = size
+        self.__size = size
